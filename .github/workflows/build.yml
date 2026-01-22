@@ -10,7 +10,7 @@ jobs:
           java-version: '8'
           distribution: temurin
       - run: mvn -B package -DskipTests
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: parity-jar
           path: applications/system/target/classes
